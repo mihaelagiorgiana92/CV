@@ -1,0 +1,213 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styles */
+body {
+    background-color: #e8f0fe;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: brown;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    color: #333;
+}
+
+header li {
+    font-size: 0.95em;
+}
+
+/* Link Styles */
+a {
+    color: brown;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 1.8em;
+    color: brown;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: darkred;
+    margin-top: 5px;
+}
+
+/* About Section */
+#about p {
+    margin-bottom: 25px;
+    text-align: justify;
+    font-size: 1.05em;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    justify-content: center;
+}
+
+#skills li {
+    background-color: brown;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+#skills li:hover {
+    background-color: black;
+}
+
+/* Experience Section */
+.job {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s;
+}
+
+.job:hover {
+    box-shadow: 0 4px 12px brown;
+}
+
+.job h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.job h4 {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.job p {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+/* Education Section */
+.education-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.education-item h3 {
+    font-size: 1.3em;
+    color: #333;
+}
+
+.education-item h4 {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.education-item p {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.education-item:hover {
+    box-shadow: 0 4px 12px brown;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: brown;
+    color: #fff;
+    border-radius: 0 0 12px 12px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Animations */
+header h1 {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
